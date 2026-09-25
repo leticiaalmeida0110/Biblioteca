@@ -1,0 +1,39 @@
+<div class="container mt-5">
+
+    <h2 class="mb-4">Tabela de Editoras</h2>
+
+    <table class="table">
+
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Cidade</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            {% for editora in editoras %}
+
+            <tr>
+                <td>{{ editora.nome }}</td>
+                <td>{{ editora.cidade }}</td>
+            </tr>
+
+            {% endfor %}
+
+        </tbody>
+
+    </table>
+
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
